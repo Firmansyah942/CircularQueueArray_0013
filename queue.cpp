@@ -50,4 +50,10 @@ queue_array[REAR] = num;
             FRONT = -1;
             REAR = -1;
         }
-       
+        else{
+            //Jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
+            if(FRONT == max - 1)
+            FRONT = FRONT + 1;
+        }
+    }
+
